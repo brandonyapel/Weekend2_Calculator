@@ -39,6 +39,7 @@ function readyNow () {
 
 var screenNumber = '';
 var equationObject = {x: 0,y: 0,operator: ''};
+var historyAppendItem
 
 function buttonπClick () {
     $('#screen').val('3.14159265358979323846264338327950288419716939937510582');
@@ -46,7 +47,7 @@ function buttonπClick () {
 
 function buttonCEClick () {
     $('#screen').val('');
-    quationObject = {x: 0,y: 0,operator: ''};
+    equationObject = {x: 0,y: 0,operator: ''};
 };//end buttonCEClicked()
 
 function buttonEqualsClick () {
@@ -61,7 +62,7 @@ function buttonEqualsClick () {
             console.log(equationObject.x + ' '+equationObject.operator+' ' + equationObject.y + ' = ' + response.answer );
             $('#screen').val(response.answer);
             $('#screen').attr('placeholder', 'Ready to Calculate');
-            var historyAppendItem = '';
+            historyAppendItem = '';
             historyAppendItem += '<tr>';
             historyAppendItem +='<td>'+equationObject.x+'</td>';
             historyAppendItem +='<td>'+equationObject.operatorSign+'</td>';
