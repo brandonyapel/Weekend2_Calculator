@@ -1,0 +1,177 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: grey;
+}
+#Branding-Image {
+    float: left;
+    height: 64px;
+    margin: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    float: left;
+    font-family: 'Adamina', serif;
+    font-size: 150%
+}
+
+#top-menu {
+    clear: both;
+    background-color: black;
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+}
+
+ul {
+    height: 40px;
+}
+li {
+    font-size: 100%;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width:31%;
+    text-decoration: none;
+    border-right-style: solid;
+    border-left-style: solid;
+
+}
+
+button{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color:grey;
+    color: black;
+}
+
+li:hover {
+    background-color:gray;
+}
+
+li:active{
+    transform: translateY(4px);
+}
+
+#calculator{
+    display:block;
+    /* position: absolute; */
+}
+
+main{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+input{
+    width:98%;
+    height: 98%;
+}
+
+
+
+#history{
+    float: left;
+    overflow-y:scroll;
+    display:block;
+}
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(103, 136, 94);
+    color: white;
+
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+#generate-random-id-td {
+    background-color: white;
+    border: none;
+    margin-left: 0;
+}
+
+.gross-expense{
+    width: 150px;
+    margin-left: 10%;
+}
+
+#employee-information-table{
+    margin:5%;
+    width: 90%;
+}
+
+#monthly-expense-information {
+    width: 50%;
+}
+
+#annual-expense-information {
+    width: 50%;
+}
+
+#add-example-employees{
+    float: left;
+    margin-left: 5%;
+}
+
+#bottom-menu{
+    background-color: black;
+    float: right;
+    list-style-type: none;
+    text-align: center;
+    height: 16px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    cursor: pointer;
+}
+
+#created-by{
+    clear: both;
+    float: right;
+    margin-right: 15px;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: grey;
+ }
+
+
+

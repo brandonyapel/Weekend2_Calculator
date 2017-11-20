@@ -1,12 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Calculator</title>
+    <script src="vendor/jquery-3.2.1.js"></script>
+    <script src="scripts/client.js"></script>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    <h1>Calculator</h1>
+    <header>
+        <div>
+            <div>
+                <img id="Branding-Image" src="images/SonofMan.jpg" width: "65" height: "90" alt="Brandon Yapels">
+                <h1>
+                    Yapel Programming Solutions
+                </h1>
+            </div>
+            <ul id="top-menu">
+                <!-- <li id="home-menubutton">
+                    Calculator
+                </li> -->
+            </ul>
+        </div>
+
+    </header>
+    <main>
+            <table id="calculator">
+                <tr>
+                    <th colspan="5">
+                        <input type="text" id="screen" placeholder="Ready to Calculate">
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="buttonπ">π</button>
+                    </td>
+                    <td>
+                        <button class="trigonomotryButton" id="buttonsin">sin</button>
+                    </td>
+                    <td>
+                        <button class="trigonomotryButton" id="buttoncos">cos</button>
+                    </td>
+                    <td>
+                        <button class="trigonomotryButton" id="buttontan">tan</button>
+                    </td>
+                    <td>
+                        <button class="operatorButton" id="button/">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <button class="operatorButton" id="button^">^</button> -->
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button7">7</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button8">8</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button9">9</button>
+                    </td>
+                    <td>
+                        <button class="operatorButton" id="button*">*</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <button id="buttonVariables">var</button> -->
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button4">4</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button5">5</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button6">6</button>
+                    </td>
+                    <td>
+                        <button class="operatorButton" id="button-">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <!-- <button id="buttonStore">=></button> -->
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button1">1</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button2">2</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button3">3</button>
+                    </td>
+                    <td>
+                        <button class="operatorButton" id="button/">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="buttonCE">CE</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button0">0</button>
+                    </td>
+                    <td>
+                        <button class="numberButton" id="button.">.</button>
+                    </td>
+                    <td>
+                        <button id="button+|-">+|-</button>
+                    </td>
+                    <td>
+                        <button id="buttonEquals">=</button>
+                    </td>
+                </tr>
+            </table>
+            <table id="history">
+                <tr>
+                    <th colspan="5">
+                        Calculation History
+                    </th>
+                </tr>
+                <!-- <tr>
+                    <td>
+                        num
+                    </td>
+                    <td>
+                        ?
+                    </td>
+                    <td>
+                        num
+                    </td>
+                    <td>
+                        =
+                    </td>
+                    <td>
+                        num
+                    </td>
+                </tr>     -->
+            </table>
+    </main>
+    <footer>
+        <ul id='bottom-menu'>
+            <!-- <li class="Bottom-Menu-Button Menu-Button">
+                    <div  >
+                        Help     
+                    </div>
+                </li>
+                <li class="Bottom-Menu-Button Menu-Button">
+                    <div >
+                        Privacy Policy
+                    </div>
+                </li>
+                <li class="Bottom-Menu-Button Menu-Button">
+                    <div >
+                        Terms of Use
+                    </div>
+                </li>
+                <li class="Bottom-Menu-Button Menu-Button">
+                    <div >
+                        About Us
+                    </div>
+                </li>
+                <li class="Bottom-Menu-Button Menu-Button" >
+                    <div>
+                    Contact Us
+                    </div>
+                </li> -->
+        </ul>
+        <p id="created-by">Created by Brandon Yapel</p>
+
+    </footer>
+
 </body>
+
 </html>

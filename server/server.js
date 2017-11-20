@@ -3,19 +3,23 @@ var bodyParser = require('body-parser');
 var app = express();
 var port = 5000;
 
-//require in routes
-var add = require('./routes/add.js');
-var divide = require('./routes/divide.js');
-var multiply = require('./routes/multiply.js');
-var subtract = require('./routes/subtract.js');
+console.log('starting up server')
 
+//require in routes
+var calculator = require('./routes/calculator');
+
+
+
+//link public folder to localhost:5000 url
 app.use(express.static('server/public'));
+
+//allows body-parser to work
 app.use(bodyParser.urlencoded({extended: true}));
 
-app.use('/add', add);
-app.use('/subtract', subtract);
-app.use('/divide', divide);
-app.use('/multiply', multiply);
+
+//links url localhost:5000/calcualtor
+app.use('/calculator', calculator);
+
 
 
 app.listen(port,function(){console.log('listening on port',port)});
