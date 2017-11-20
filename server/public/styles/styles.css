@@ -93,7 +93,8 @@ input{
 
 #history{
     float: left;
-    overflow-y:scroll;
+    height: 300px;
+    overflow:scroll;
     display:block;
 }
 td, th {
